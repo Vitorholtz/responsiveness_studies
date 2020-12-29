@@ -12,13 +12,14 @@
 
     <header>
         <a href="#">Period<span>.</span></a>
-        <ul class="navigation"></ul>
-        <li id="menu">Menu</li>
-        <li id="about">About us</li>
-        <li id="find">Find me</li>
-        <li id="loc">Location</li>
-        <li id="contanct">Contact</li>
-        <li id="any">Anything</li>
+        <ul class="navigation">
+         <li id="menu">Menu</li>
+         <li id="about">About us</li>
+         <li id="find">Find me</li>
+         <li id="loc">Location</li>
+         <li id="contanct">Contact</li>
+         <li id="any">Anything</li>
+        </ul>
     </header>
 
 <div class="hero">
@@ -30,5 +31,22 @@
     </div>
 </div>
 
+<section>
+
+</section>
+
+<script>
+    
+    window.addEventListener ('scroll', function (){
+
+        const header = document.querySelector('header');
+        header.classList.toggle('sticky', window.scrollY > 200 )
+    
+
+    })
+</script>
+
 </body>
+
+
 </html>
